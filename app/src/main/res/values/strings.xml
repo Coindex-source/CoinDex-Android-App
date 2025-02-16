@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">CoinDex</string>
+    <string name="hello_blank_fragment">测试页</string>
+
+    <string name="navigation_home">首页</string>
+    <string name="navigation_coins">行情</string>
+    <string name="navigation_exchange">交易</string>
+    <string name="navigation_follow">关注</string>
+    <string name="navigation_property">资产</string>
+
+    <string name="login_1">Web3交易\n资产自我掌控</string>
+    <string name="login_2">钱包 · 收款 · 转账 · 交易</string>
+    <string name="login_3">创建钱包</string>
+    <string name="login_4">导入钱包</string>
+
+    <string name="item_login_create_1">创建助记词钱包</string>
+    <string name="item_login_create_2">安全便携，资产由你掌控</string>
+    <string name="item_login_create_3">创建钱包</string>
+    <string name="item_login_create_4">创建即表示同意Coindex服务条款</string>
+
+    <string name="item_login_load_1">选择导入方式</string>
+    <string name="item_login_load_2">助记词</string>
+    <string name="item_login_load_3">助记词由单词组成，以空格隔开</string>
+    <string name="item_login_load_4">私钥</string>
+    <string name="item_login_load_5">明文私钥字符</string>
+    <string name="item_login_load_6">云备份</string>
+    <string name="item_login_load_7">从云盘快捷导入以备份的钱包</string>
+    <string name="item_login_load_8">Keystore</string>
+    <string name="item_login_load_9">加密的私钥JSON文件</string>
 </resources>

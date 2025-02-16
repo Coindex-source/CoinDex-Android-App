@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 上方颜色 -->
+    <!-- 下方颜色 -->
+    <!-- 从上到下的渐变角度 -->
+    <gradient
+        android:angle="270"
+        android:endColor="@color/white"
+        android:startColor="@color/primary_blue"
+        android:type="linear" />
+</shape>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <View
+        android:id="@+id/v_item_login_load_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/translucent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/v_item_login_load_bg"
+        android:layout_marginBottom="-20dp"
+        />
+
+    <View
+        android:id="@+id/v_item_login_load_bg"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@drawable/shape_white_btn_corners_top_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        android:background="@drawable/shape_dialog_top_line_corners_5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_bg"
+        android:layout_marginTop="10dp"
+        />
+
+    <View
+        android:id="@+id/v_item_login_load_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E5E5E5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_bg"
+        android:layout_marginTop="68dp"
+        />
+    <View
+        android:id="@+id/v_item_login_load_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="156dp"
+        />
+    <View
+        android:id="@+id/v_item_login_load_line_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="244dp"
+        />
+    <View
+        android:id="@+id/v_item_login_load_line_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="332dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_login_load_1"
+        android:textSize="16sp"
+        android:textColor="@color/text_title"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/v_item_login_load_line_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        />
+
+<!--    助记词start-->
+    <TextView
+        android:id="@+id/tv_item_login_load_title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_login_load_2"
+        android:textSize="20sp"
+        android:textColor="@color/text_title"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_line_1"
+        app:layout_constraintBottom_toTopOf="@id/tv_item_login_load_sub_1"
+        android:layout_marginLeft="55dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_login_load_sub_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_login_load_3"
+        android:textSize="14sp"
+        android:textColor="@color/text_subtitle"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_login_load_title_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_login_load_title_1"
+        app:layout_constraintBottom_toBottomOf="@id/v_item_login_load_line_2"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_login_load_1"
+        app:layout_constraintTop_toTopOf="@id/tv_item_login_load_title_1"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_login_load_title_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_login_load_arrow"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_line_1"
+        app:layout_constraintBottom_toBottomOf="@id/v_item_login_load_line_2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        />
+
+    <View
+        android:id="@+id/v_item_login_load_click_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_item_login_load_line_1"
+        app:layout_constraintBottom_toTopOf="@id/v_item_login_load_line_2"
+        />
+
+
+<!--  私钥 start  -->
+    <TextView
+        android:id="@+id/tv_item_login_load_title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_login_load_4"
+        android:textSize="20sp"
+        android:textColor="@color/text_title"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_line_2"
+        app:layout_constraintBottom_toTopOf="@id/tv_item_login_load_sub_2"
+        android:layout_marginLeft="55dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_login_load_sub_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_login_load_5"
+        android:textSize="14sp"
+        android:textColor="@color/text_subtitle"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_login_load_title_2"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_login_load_title_2"
+        app:layout_constraintBottom_toBottomOf="@id/v_item_login_load_line_3"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_login_load_2"
+        app:layout_constraintTop_toTopOf="@id/tv_item_login_load_title_2"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_login_load_title_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_login_load_arrow"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_line_2"
+        app:layout_constraintBottom_toBottomOf="@id/v_item_login_load_line_3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        />
+
+    <View
+        android:id="@+id/v_item_login_load_click_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_item_login_load_line_2"
+        app:layout_constraintBottom_toTopOf="@id/v_item_login_load_line_3"
+        />
+
+<!--    云备份 start-->
+    <TextView
+        android:id="@+id/tv_item_login_load_title_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_login_load_6"
+        android:textSize="20sp"
+        android:textColor="@color/text_title"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_line_3"
+        app:layout_constraintBottom_toTopOf="@id/tv_item_login_load_sub_3"
+        android:layout_marginLeft="55dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_login_load_sub_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_login_load_7"
+        android:textSize="14sp"
+        android:textColor="@color/text_subtitle"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_login_load_title_3"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_login_load_title_3"
+        app:layout_constraintBottom_toBottomOf="@id/v_item_login_load_line_4"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_login_load_3"
+        app:layout_constraintTop_toTopOf="@id/tv_item_login_load_title_3"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_login_load_title_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_login_load_arrow"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_line_3"
+        app:layout_constraintBottom_toBottomOf="@id/v_item_login_load_line_4"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        />
+
+    <View
+        android:id="@+id/v_item_login_load_click_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_item_login_load_line_3"
+        app:layout_constraintBottom_toTopOf="@id/v_item_login_load_line_4"
+        />
+
+<!--    Keystore start-->
+    <TextView
+        android:id="@+id/tv_item_login_load_title_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_login_load_8"
+        android:textSize="20sp"
+        android:textColor="@color/text_title"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_line_4"
+        app:layout_constraintBottom_toTopOf="@id/tv_item_login_load_sub_4"
+        android:layout_marginLeft="55dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_login_load_sub_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_login_load_9"
+        android:textSize="14sp"
+        android:textColor="@color/text_subtitle"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_login_load_title_4"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_login_load_title_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_login_load_4"
+        app:layout_constraintTop_toTopOf="@id/tv_item_login_load_title_4"
+        app:layout_constraintBottom_toBottomOf="@id/tv_item_login_load_title_4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_login_load_arrow"
+        app:layout_constraintTop_toTopOf="@id/v_item_login_load_line_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        />
+
+    <View
+        android:id="@+id/v_item_login_load_click_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_item_login_load_line_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

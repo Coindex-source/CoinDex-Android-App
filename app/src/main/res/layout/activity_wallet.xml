@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".ui.WalletActivity">
+
+    <EditText
+        android:id="@+id/et_wallet_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="输入钱包密码"
+        android:inputType="text"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:paddingHorizontal="20dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\u0021\u0040\u0023\u0024\u005E\u0026\u002A\u0028\u0029\u005F\u002B\u002D\u003D\u005B\u005D\u007B\u007D\u003B\u003A\u0027\u0022\u005C\u002C\u002E\u003C\u003E\u003F\u002F"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_wallet_opt_1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="创建钱包"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_wallet_opt_2"
+        app:layout_constraintTop_toBottomOf="@id/et_wallet_pwd"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_wallet_opt_2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="创建钱包"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_wallet_opt_1"
+        app:layout_constraintTop_toTopOf="@id/tv_wallet_opt_1"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
