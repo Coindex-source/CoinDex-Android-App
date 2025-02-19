@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景颜色 -->
+    <!-- 边框宽度和颜色 -->
+    <!-- 圆角半径 -->
+    <solid android:color="@color/btn_disable" />
+    <corners android:radius="10dp" />
+</shape>

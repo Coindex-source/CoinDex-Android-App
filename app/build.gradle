@@ -45,5 +45,6 @@ dependencies {
 
     implementation libs.androidx.viewpager2
     implementation libs.web3j
+    implementation libs.mmkv.static
 
 }

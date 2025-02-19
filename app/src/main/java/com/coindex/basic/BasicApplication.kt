@@ -5,6 +5,9 @@ import android.app.Application
 import android.os.Bundle
 import com.coindex.utils.LogUtils
 import com.coindex.utils.LogUtils.logI
+import com.coindex.utils.StorageUtils
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 open class BasicApplication : Application() {
     companion object {
@@ -16,8 +19,9 @@ open class BasicApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         appContext =this
-
+        StorageUtils.init(this)
         LogUtils.init("coinDex").showLog(true)
+
 
         registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks {
             override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {

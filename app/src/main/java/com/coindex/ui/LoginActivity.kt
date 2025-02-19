@@ -1,5 +1,6 @@
 package com.coindex.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
@@ -83,7 +84,10 @@ class LoginActivity : BindingActivity<ActivityLoginBinding>() {
         }
 //        立即创建
         binding.groupLoginCreate.tvItemLoginCreateSubmit.setOnClickListener {
-            ToastUtils.show(this,"创建钱包",Toast.LENGTH_SHORT)
+            AnimateUtils.animateViewGroupVisibility(binding.groupLoginCreate.root,false,100L){
+                onBackPressedCallbackCreate.isEnabled=false
+                startActivity(Intent(this@LoginActivity,CreateWalletActivity::class.java))
+            }
         }
 //        服务条款
         // 获取颜色资源
@@ -91,13 +95,11 @@ class LoginActivity : BindingActivity<ActivityLoginBinding>() {
         val colorURL = ContextCompat.getColor(this, R.color.primary_blue)
         // 创建 SpannableString
         val spannableString = SpannableString("创建即表示同意Coindex服务条款")
-        // 设置 "Hello" 为红色
         spannableString.setSpan(
             ForegroundColorSpan(colorText),
             0, 7,
             Spanned.SPAN_INCLUSIVE_INCLUSIVE
         )
-        // 设置 "World" 为蓝色
         spannableString.setSpan(
             ForegroundColorSpan(colorURL),
             7, 18,
@@ -106,23 +108,23 @@ class LoginActivity : BindingActivity<ActivityLoginBinding>() {
         // 设置 TextView 的文本
         binding.groupLoginCreate.tvItemLoginCreateAgreement.text = spannableString
         binding.groupLoginCreate.tvItemLoginCreateAgreement.setOnClickListener {
-            ToastUtils.show(this,"查看条款",Toast.LENGTH_SHORT)
+            ToastUtils.show(this,"查看条款")
         }
 //      助记词
         binding.groupLoginLoad.vItemLoginLoadClick1.setOnClickListener {
-            ToastUtils.showCenter(this,"导入助记词",Toast.LENGTH_SHORT)
+            ToastUtils.showCenter(this,"导入助记词")
         }
 //        私钥
         binding.groupLoginLoad.vItemLoginLoadClick2.setOnClickListener {
-            ToastUtils.show(this,"导入私钥",Toast.LENGTH_SHORT)
+            ToastUtils.show(this,"导入私钥")
         }
 //        云备份
         binding.groupLoginLoad.vItemLoginLoadClick3.setOnClickListener {
-            ToastUtils.showCenter(this,"导入云备份",Toast.LENGTH_SHORT)
+            ToastUtils.showCenter(this,"导入云备份")
         }
 //        JSON文件
         binding.groupLoginLoad.vItemLoginLoadClick4.setOnClickListener {
-            ToastUtils.show(this,"导入JSON文件",Toast.LENGTH_SHORT)
+            ToastUtils.show(this,"导入JSON文件")
         }
         binding.groupLoginCreate.vItemLoginCreateBg.setOnClickListener {  }
         binding.groupLoginLoad.vItemLoginLoadBg.setOnClickListener {  }
